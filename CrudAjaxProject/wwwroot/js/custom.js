@@ -282,7 +282,7 @@ function ShowEmployeeData() {
         success: function (result) {
             let rows = '';
 
-            if (result.status === "Success" && result.data.length > 0) {
+            if (result.status == "Success" && result.data.length > 0) {
                 $.each(result.data, function (i, item) {
                     rows += `
                         <tr>
