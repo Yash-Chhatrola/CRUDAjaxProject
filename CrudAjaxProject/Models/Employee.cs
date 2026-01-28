@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 namespace CrudAjaxProject.Models
 {
@@ -13,6 +14,7 @@ namespace CrudAjaxProject.Models
         [Required(ErrorMessage = "State can't be blank")]
         public string State { get; set; }
         [Required]
-        public decimal? Salary {  get; set; }
+        [Precision(18,0)]
+        public decimal? Salary { get; set; }
     }
 }

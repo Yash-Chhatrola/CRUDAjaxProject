@@ -361,3 +361,4 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/CrudAjaxProject/Migrations/20260120134242_CreateTableEmployee.cs
